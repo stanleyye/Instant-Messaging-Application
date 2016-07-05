@@ -25,9 +25,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-app.get('/', function(req,res) {
-  res.send("Hello World!");
-})
+// app.get('/', function(req,res) {
+//   res.sendfile(path.join(__dirname, '/public', 'login.html'));
+// })
 
 app.listen(8001, function() {
   console.log('listening on some port');
